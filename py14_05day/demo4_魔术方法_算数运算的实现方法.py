@@ -16,6 +16,14 @@ class Demo:
        print(other.number)
        return 999
 
+    def __sub__(self, other):
+        return 250
+
+    def __lt__(self, other):
+        return 1
+
 a = Demo(11)
 b = Demo(22)
 print(a+b)  # a + b ==> self.__add__(a,b),如果类中有__add__的魔术方法，就可以进行相加的操作
+print(a-b)  # a - b ==> self.__sub__(a,b),如果类中有__sub__的魔术方法，就可以进行相减的操作
+print(a+b)

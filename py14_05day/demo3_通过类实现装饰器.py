@@ -19,6 +19,7 @@ class Demo:
         self.func()
         print("调用后执行")
 
+
 @Demo  # test = Demo(test)
 def test():
     print("你好")
@@ -30,7 +31,7 @@ test()
 
 
 # 二、类实现装饰器，装饰带参数的函数
-class Tow():
+class Tow:
 
     def __init__(self, func):
         self.func = func
@@ -50,7 +51,7 @@ print(tow)
 
 # 三，类实现装饰器，装饰器带参数
 
-class Three():
+class Three():  # 保存为对象的属性，类做装饰器，不用闭包
 
     def __init__(self, number):
         self.number = number
