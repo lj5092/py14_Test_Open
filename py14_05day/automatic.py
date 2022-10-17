@@ -32,7 +32,7 @@ headers = {
 json = {"msgtype": "markdown",
         "markdown": {
             "title": "ttt",
-            "text": "志远"
+            "text": "取餐了@所有人"
         }}
 resp = requests.post(url, headers=headers, json=json)
 print(resp.text)
